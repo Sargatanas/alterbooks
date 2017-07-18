@@ -11,10 +11,18 @@
 
   &__href {
     display: block;
-    width: 190px;
+    width: 10.5vw;
     height: 31px;
     text-align: center;
     line-height: 31px;
     color: #f0b055;
+    font-size: 1.3vw;
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1400px) {
+    &__href {
+      width: 12vw;
+      font-size: 18px;
+    }
   }
 }

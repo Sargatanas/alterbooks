@@ -22,28 +22,43 @@ body {
 }
 .text-title {
   font-family: Kurale, serif;
-  font-size: 25px;
+}
+.header {
+  width: 100%;
 }
 .header-books {
-  width: 1900px;
-  height: 70px;
+  width: 100%;
+  height: 3.6vw;
   background: #2f2c2a;
 }
 .header-books__image {
   width: inherit;
-  height: 65px;
+  height: 3.5vw;
   background: url("../img/books.png") repeat-x;
+  background-size: auto 100%;
 }
 .header-books__shadow {
   width: inherit;
   height: inherit;
-  margin-top: -65px;
+  margin-top: -3.5vw;
   background: linear-gradient(to right, rgba(47, 44, 42, 0.6) 0%, rgba(47, 44, 42, 0) 50%, rgba(47, 44, 42, 0.6) 100%);
+}
+@media screen and (min-width: 1024px) and (max-width: 1400px) {
+  .header-books {
+    height: 50px;
+  }
+  .header-books__image {
+    height: 47px;
+  }
+  .header-books__shadow {
+    height: 50px;
+    margin-top: -47px;
+  }
 }
 .header-shelf {
   display: flex;
   align-items: center;
-  width: 1900px;
+  width: 100%;
   height: 55px;
   background: linear-gradient(to right, #4c4135, #75644c 50%, #4c4135);
   border-top: solid 1px #231f20;
@@ -52,22 +67,36 @@ body {
 .header-caption {
   display: flex;
   align-items: center;
-  width: 352px;
-  height: 147px;
-  margin-left: 30px;
-  margin-right: 100px;
+  width: 18.3vw;
+  height: 7.6vw;
+  margin-left: 1.5vw;
+  margin-right: 3vw;
 }
 .header-caption__logo {
-  width: 106px;
-  height: 147px;
-  margin-right: 24px;
+  width: 5.5vw;
+  height: 7.7vw;
+  margin-right: 1.25vw;
   background: url("../img/logo.png") no-repeat;
+  background-size: 100%;
 }
 .header-caption__title {
-  font-size: 40px;
+  font-size: 2vw;
   line-height: 55px;
   letter-spacing: 3px;
   color: #f0b055;
+}
+@media screen and (min-width: 1024px) and (max-width: 1400px) {
+  .header-caption {
+    width: 253px;
+  }
+  .header-caption__title {
+    font-size: 28px;
+  }
+  .header-caption__logo {
+    width: 77px;
+    height: 108px;
+    margin-right: 17px;
+  }
 }
 .header-menu {
   display: flex;
@@ -80,18 +109,27 @@ body {
 }
 .header-menu__href {
   display: block;
-  width: 190px;
+  width: 10.5vw;
   height: 31px;
   text-align: center;
   line-height: 31px;
   color: #f0b055;
+  font-size: 1.3vw;
+}
+@media screen and (min-width: 1024px) and (max-width: 1400px) {
+  .header-menu__href {
+    width: 12vw;
+    font-size: 18px;
+  }
+}
+.header-login {
+  margin-left: 2vw;
 }
 .header-login__button {
   display: flex;
   align-items: center;
   width: 200px;
   height: 35px;
-  margin-left: 37px;
 }
 .header-login__form-field {
   width: 194px;
@@ -99,17 +137,35 @@ body {
   transform-origin: 0 0 0;
 }
 .header-login__form {
+  width: 192px;
+  height: 33px;
   fill: #5b4e3f;
   stroke: #9c877c;
   stroke-width: 2px;
   stroke-dasharray: 5px;
-  rx: 10px;
+  rx: 0.52vw;
 }
 .header-login__button-text {
   position: relative;
-  margin-left: -122px;
-  margin-top: -3px;
+  margin-left: calc(-192px/2 - 1.3vw);
+  margin-top: -0.15vw;
+  font-size: 1.3vw;
   color: #b09f89;
+}
+@media screen and (min-width: 1024px) and (max-width: 1400px) {
+  .header-login__form-field {
+    width: 6vw;
+  }
+  .header-login__form {
+    width: 5.9vw;
+    rx: 7px;
+  }
+  .header-login__button-text {
+    margin-left: -3.9vw;
+    color: rgba(0, 0, 0, 0);
+    background: url("../img/login.png") no-repeat;
+    background-size: 2vw;
+  }
 }
 .main {
   width: 1090px;

@@ -1,10 +1,11 @@
 .header-login {
+  margin-left: 2vw;
+
   &__button {
     display: flex;
     align-items: center;
     width: 200px;
     height: 35px;
-    margin-left: 37px;
   }
 
   &__form-field {
@@ -14,17 +15,38 @@
   }
 
   &__form {
+    width: 192px;
+    height: 33px;
     fill: #5b4e3f;
     stroke: #9c877c;
     stroke-width: 2px;
     stroke-dasharray: 5px;
-    rx: 10px;
+    rx: 0.52vw;
   }
 
   &__button-text {
     position: relative;
-    margin-left: -122px;
-    margin-top: -3px;
+    margin-left: ~"calc(-192px/2 - 1.3vw)";
+    margin-top: -0.15vw;
+    font-size: 1.3vw;
     color: #b09f89;
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1400px) {
+    &__form-field {
+      width: 6vw;
+    }
+
+    &__form {
+      width: 5.9vw;
+      rx: 7px;
+    }
+
+    &__button-text {
+      margin-left: -3.9vw;
+      color: rgba(0, 0, 0, 0);
+      background: url("../img/login.png") no-repeat;
+      background-size: 2vw;
+    }
   }
 }
