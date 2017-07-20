@@ -1,8 +1,20 @@
 .main-status {
   display: block;
   position: relative;
-  margin-left: 172px;
   margin-top: 78px;
   font-size: 19px;
   color: #513b25;
+
+  @media screen and (max-width: 1400px) {
+    & {
+      margin-top: 5.2vw;
+    }
+  }
+
+  @media screen and (max-width: 1300px) {
+    & {
+      margin-top: 5vw;
+      font-size: 1.46vw;
+    }
+  }
 }

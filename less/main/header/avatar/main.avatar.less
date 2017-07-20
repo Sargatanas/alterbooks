@@ -9,6 +9,8 @@
     background: #ffffff url("../img/gagfox.png") no-repeat 50% 50%;
     border: solid 1px #c4a28c;
     border-radius: 4px;
+    background-size: 70.7% 52.1%;
+
   }
 
   &__button {
@@ -29,6 +31,7 @@
       height: 21px;
       margin-right: 7px;
       background: url("../img/camera.png") no-repeat;
+      background-size: 100%;
     }
 
     &::after {
@@ -38,6 +41,35 @@
       font-size: 17px;
       line-height: 40px;
       color: #ffffff;
+      background-size: 100%;
+    }
+  }
+
+    @media screen and (max-width: 1400px) {
+      &__image {
+        width: 15.36vw;
+        height: 17.14vw;
+        border-radius: 0.28vw;
+      }
+
+      &__button {
+        width: 15.36vw;
+        margin-top: 1vw;
+        border-radius: 0.28vw;
+      }
+    }
+
+  @media screen and (max-width: 1200px) {
+    &__button::before {
+      width: 1.83vw;
+      height: 1.75vw;
+      margin-right: 0.58vw;
+    }
+
+    &__button::after {
+      margin-top: 0.42vw;
+      font-size: 1.5vw;
+      line-height: 3.33vw;
     }
   }
 }

@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   margin-left: 21px;
+  margin-right: 172px;
   margin-top: 60px;
 
   &__name {
@@ -16,5 +17,29 @@
     margin-left: 8px;
     font-size: 18px;
     color: #7f6d58;
+  }
+
+  @media screen and (max-width: 1400px) {
+    & {
+      margin-left: 1.5vw;
+      margin-right: 8vw;
+      margin-top: 4vw;
+    }
+  }
+
+  @media screen and (max-width: 1300px) {
+    & {
+      margin-top: 3.6vw;
+    }
+
+    &__name {
+      font-size: 2.31vw;
+    }
+
+    &__nickname {
+      margin-top: 0.46vw;
+      margin-left: 0.62vw;
+      font-size: 1.38vw;
+    }
   }
 }
