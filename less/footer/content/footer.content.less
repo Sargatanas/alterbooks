@@ -7,14 +7,22 @@
     height: 294px;
     margin-top: 2px;
     background: url("../img/column.png") no-repeat;
-    background-size: 100%;
+    background-size: 100px 100%;
 
     &:first-child {
-    margin-left: 63px;
+    margin-left: 3.28vw;
     }
 
     &:last-child {
-    margin-right: 63px;
+    margin-right: 3.28vw;
+    }
+  }
+
+  @media screen and (max-width: 1235px) {
+    &__column {
+      width: 8.09vw;
+      height: 23.8vw;
+      background-size: 100%;
     }
   }
 }

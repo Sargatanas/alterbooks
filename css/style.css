@@ -363,7 +363,7 @@ body {
   color: #b09f89;
 }
 .footer {
-  width: 1900px;
+  width: 100%;
   height: 315px;
   background-image: linear-gradient(to bottom, #524636, #826f5b 20%, #826f5b 30%, #524636);
 }
@@ -371,6 +371,11 @@ body {
   width: inherit;
   height: 19px;
   background-color: #968371;
+}
+@media screen and (max-width: 1235px) {
+  .footer {
+    height: calc(23.8vw + 19px);
+  }
 }
 .footer-content {
   display: flex;
@@ -381,21 +386,28 @@ body {
   height: 294px;
   margin-top: 2px;
   background: url("../img/column.png") no-repeat;
-  background-size: 100%;
+  background-size: 100px 100%;
 }
 .footer-content__column:first-child {
-  margin-left: 63px;
+  margin-left: 3.28vw;
 }
 .footer-content__column:last-child {
-  margin-right: 63px;
+  margin-right: 3.28vw;
+}
+@media screen and (max-width: 1235px) {
+  .footer-content__column {
+    width: 8.09vw;
+    height: 23.8vw;
+    background-size: 100%;
+  }
 }
 .footer-menu {
-  margin-top: 63px;
+  margin-top: 3.28vw;
 }
 .footer-menu-block {
   display: flex;
   flex-direction: column;
-  margin-right: 75px;
+  margin-right: 3.9vw;
 }
 .footer-menu-block:last-child {
   margin-right: 0;
@@ -425,27 +437,48 @@ body {
   color: #d6d0c9;
   margin-top: 15px;
 }
-.footer-menu-block__href_vk::before {
-  content: "";
-  display: block;
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
-  background: url("../img/social-icon(1).png") no-repeat;
-}
-.footer-menu-block__href_fb::before {
-  content: "";
-  display: block;
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
-  background: url("../img/social-icon(2).png") no-repeat;
-}
+.footer-menu-block__href_vk::before,
+.footer-menu-block__href_fb::before,
 .footer-menu-block__href_tw::before {
   content: "";
   display: block;
   width: 30px;
   height: 30px;
   margin-right: 10px;
+}
+.footer-menu-block__href_vk::before {
+  background: url("../img/social-icon(1).png") no-repeat;
+}
+.footer-menu-block__href_fb::before {
+  background: url("../img/social-icon(2).png") no-repeat;
+}
+.footer-menu-block__href_tw::before {
   background: url("../img/social-icon(3).png") no-repeat;
+}
+@media screen and (max-width: 1235px) {
+  .footer-menu-block__title {
+    font-size: 1.62vw;
+  }
+  .footer-menu-block__item {
+    margin-left: 0.64vw;
+    margin-right: 0.81vw;
+    font-size: 1.62vw;
+  }
+  .footer-menu-block__href {
+    margin-top: 1.21vw;
+  }
+  .footer-menu-block__href_vk::before,
+  .footer-menu-block__href_fb::before,
+  .footer-menu-block__href_tw::before {
+    width: 2.43vw;
+    height: 2.43vw;
+    margin-right: 0.81vw;
+    background-size: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .footer-menu-block__title {
+    margin-right: 0.98vw;
+    margin-left: 0.49vw;
+  }
 }

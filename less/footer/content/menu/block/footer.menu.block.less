@@ -1,7 +1,7 @@
 .footer-menu-block {
   display: flex;
   flex-direction: column;
-  margin-right: 75px;
+  margin-right: 3.9vw;
 
   &:last-child {
     margin-right: 0;
@@ -35,31 +35,58 @@
     color: #d6d0c9;
     margin-top: 15px;
 
-    &_vk::before {
-      content: "";
-      display: block;
-      width: 30px;
-      height: 30px;
-      margin-right: 10px;
-      background: url("../img/social-icon(1).png") no-repeat;
-    }
-
-    &_fb::before {
-      content: "";
-      display: block;
-      width: 30px;
-      height: 30px;
-      margin-right: 10px;
-      background: url("../img/social-icon(2).png") no-repeat;
-    }
-
+    &_vk::before,
+    &_fb::before,
     &_tw::before {
       content: "";
       display: block;
       width: 30px;
       height: 30px;
       margin-right: 10px;
+    }
+
+    &_vk::before {
+      background: url("../img/social-icon(1).png") no-repeat;
+    }
+
+    &_fb::before {
+      background: url("../img/social-icon(2).png") no-repeat;
+    }
+
+    &_tw::before {
       background: url("../img/social-icon(3).png") no-repeat;
+    }
+  }
+
+  @media screen and (max-width: 1235px) {
+    &__title {
+      font-size: 1.62vw;
+    }
+
+    &__item {
+      margin-left: 0.64vw;
+      margin-right: 0.81vw;
+      font-size: 1.62vw;
+    }
+
+    &__href {
+      margin-top: 1.21vw;
+
+      &_vk::before,
+      &_fb::before,
+      &_tw::before {
+        width: 2.43vw;
+        height: 2.43vw;
+        margin-right: 0.81vw;
+        background-size: 100%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    &__title {
+      margin-right: 0.98vw;
+      margin-left: 0.49vw;
     }
   }
 }
