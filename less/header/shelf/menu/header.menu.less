@@ -2,10 +2,10 @@
   display: flex;
 
   &__item {
-    border-left: 1px solid #231f20;
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
 
     &:last-child {
-      border-right: 1px solid #231f20;
+      border-right: 1px solid rgba(0, 0, 0, 0.3);
     }
   }
 
@@ -17,6 +17,14 @@
     line-height: 31px;
     color: #f0b055;
     font-size: 1.3vw;
+
+    &:hover {
+      //background: rgba(156, 136, 103, 0.71);
+      background: linear-gradient(to right, rgba(156, 136, 103, 0.1) 0%, rgba(156, 136, 103, 0.7) 30%, rgba(156, 136, 103, 0.7) 70%, rgba(156, 136, 103, 0.1) 100%);
+      border-radius: 5px;
+      color: #ffdf8b;
+      transition-duration: 1s;
+    }
   }
 
   @media screen and (min-width: 1024px) and (max-width: 1400px) {

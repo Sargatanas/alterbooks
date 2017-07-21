@@ -6,6 +6,20 @@
     align-items: center;
     width: 200px;
     height: 35px;
+
+    &:hover {
+      & .header-login__form {
+        fill: #6a5d4a;
+        stroke: #ae988d;
+        stroke-dasharray: 1000px;
+        transition-duration: 1s;
+      }
+
+      & .header-login__button-text {
+        color: #d8c9b5;
+        transition-duration: 1s;
+      }
+    }
   }
 
   &__form-field {
@@ -33,12 +47,19 @@
   }
 
   @media screen and (min-width: 1024px) and (max-width: 1400px) {
+    &__button:hover {
+      & .header-login__button-text {
+        color: rgba(0, 0, 0, 0);
+      }
+    }
+
     &__form-field {
       width: 6vw;
     }
 
     &__form {
       width: 5.9vw;
+      stroke-dasharray: 3px;
       rx: 7px;
     }
 

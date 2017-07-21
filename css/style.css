@@ -102,10 +102,10 @@ body {
   display: flex;
 }
 .header-menu__item {
-  border-left: 1px solid #231f20;
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
 }
 .header-menu__item:last-child {
-  border-right: 1px solid #231f20;
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
 }
 .header-menu__href {
   display: block;
@@ -115,6 +115,12 @@ body {
   line-height: 31px;
   color: #f0b055;
   font-size: 1.3vw;
+}
+.header-menu__href:hover {
+  background: linear-gradient(to right, rgba(156, 136, 103, 0.1) 0%, rgba(156, 136, 103, 0.7) 30%, rgba(156, 136, 103, 0.7) 70%, rgba(156, 136, 103, 0.1) 100%);
+  border-radius: 5px;
+  color: #ffdf8b;
+  transition-duration: 1s;
 }
 @media screen and (min-width: 1024px) and (max-width: 1400px) {
   .header-menu__href {
@@ -130,6 +136,16 @@ body {
   align-items: center;
   width: 200px;
   height: 35px;
+}
+.header-login__button:hover .header-login__form {
+  fill: #6a5d4a;
+  stroke: #ae988d;
+  stroke-dasharray: 1000px;
+  transition-duration: 1s;
+}
+.header-login__button:hover .header-login__button-text {
+  color: #d8c9b5;
+  transition-duration: 1s;
 }
 .header-login__form-field {
   width: 194px;
@@ -153,11 +169,15 @@ body {
   color: #b09f89;
 }
 @media screen and (min-width: 1024px) and (max-width: 1400px) {
+  .header-login__button:hover .header-login__button-text {
+    color: rgba(0, 0, 0, 0);
+  }
   .header-login__form-field {
     width: 6vw;
   }
   .header-login__form {
     width: 5.9vw;
+    stroke-dasharray: 3px;
     rx: 7px;
   }
   .header-login__button-text {
