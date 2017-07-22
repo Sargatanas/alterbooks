@@ -294,6 +294,10 @@ body {
   color: #ffffff;
   background-size: 100%;
 }
+.main-avatar__button:hover {
+  background: #dbba9c;
+  transition-duration: 0.3s;
+}
 @media screen and (max-width: 1400px) {
   .main-avatar__image {
     width: 15.36vw;
@@ -394,6 +398,11 @@ body {
   line-height: 50px;
   font-size: 22px;
   color: #ffffff;
+}
+.main-menu__item:hover {
+  background: #76e5cc;
+  box-shadow: 0 2px 0 #bbffeb, 0px -2px 0px #bbffeb, 2px 0px 0px #bbffeb, -2px 0px 0px #bbffeb;
+  transition-duration: 0.3s;
 }
 @media screen and (max-width: 1400px) {
   .main-menu {
@@ -642,6 +651,9 @@ body {
 }
 .footer-menu-block__href_tw::before {
   background: url("../img/social-icon(3).png") no-repeat;
+}
+.footer-menu-block__href:hover {
+  color: #ffffff;
 }
 @media screen and (max-width: 1235px) {
   .footer-menu-block__title {
