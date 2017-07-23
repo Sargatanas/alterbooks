@@ -50,20 +50,22 @@
   @media screen and (max-width: 1024px) {
 
     &__items {
-      display: none;
       flex-direction: column;
       position: absolute;
-      top: 59px;
+      top: 61px;
       left: 200px;
-      border: 1px solid rgba(0, 0, 0, 0.3);
-      border-top: none;
+      height: 0;
+      overflow: hidden;
+      border: none;
       border-bottom-right-radius: 10px;
       background: #75644c;
       z-index: 5;
+      transition-duration: 0.1s;
     }
 
     &__active {
       display: block;
+      transition-duration: 0.5s;
     }
 
     &:hover, &:active {
@@ -74,12 +76,15 @@
       }
 
       & .header-menu__items {
-        display: block;
+        height: 158px;
+        transition-duration: 0.5s;
       }
     }
 
     &__item {
       border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+      border-left: none;
+      border-right: none;
     }
 
     &__href {
