@@ -1,10 +1,15 @@
 .header-caption {
   display: flex;
   align-items: center;
-  width: 18.3vw;
+  width: auto;
   height: 7.6vw;
   margin-left: 1.5vw;
   margin-right: 3vw;
+
+  &__href {
+    display: flex;
+    align-items: center;
+  }
 
   &__logo {
     width: 5.5vw;
@@ -22,18 +27,26 @@
   }
 
   @media screen and (min-width: 1024px) and (max-width: 1400px) {
-    & {
-      width: 253px;
+    &__logo {
+      width: 77px;
+      height: 108px;
+      margin-right: 17px;
     }
 
     &__title {
       font-size: 28px;
     }
+  }
 
+  @media screen and (max-width: 1024px) {
     &__logo {
-      width: 77px;
-      height: 108px;
-      margin-right: 17px;
+      width: 50px;
+      height: 70px;
+      margin-right: 15px;
+    }
+
+    &__title {
+      font-size: 20px;
     }
   }
 }

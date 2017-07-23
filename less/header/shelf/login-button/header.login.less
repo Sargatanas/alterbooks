@@ -4,7 +4,7 @@
   &__button {
     display: flex;
     align-items: center;
-    width: 200px;
+    width: 10.42vw;
     height: 35px;
 
     &:hover {
@@ -46,7 +46,7 @@
     color: #b09f89;
   }
 
-  @media screen and (min-width: 1024px) and (max-width: 1400px) {
+  @media screen and (max-width: 1400px) {
     &__button:hover {
       & .header-login__button-text {
         color: rgba(0, 0, 0, 0);
@@ -71,6 +71,36 @@
       color: rgba(0, 0, 0, 0);
       background: url("../img/login.png") no-repeat;
       background-size: 100%;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    & {
+      margin-right: 10px;
+      margin-top: 2px;
+    }
+
+    &__button {
+      width: 52px;
+    }
+
+    &__form-field {
+      width: 51px;
+    }
+
+    &__form {
+      width: 50px;
+      height: 31px;
+    }
+
+    &__button-text {
+      width: 18px;
+      height: 18px;
+      margin-left: -35px;
+      margin-top: -2px;
+      background: url("../img/login.png") no-repeat;
+      background-size: 100%;
+      color: rgba(0, 0, 0, 0);
     }
   }
 }

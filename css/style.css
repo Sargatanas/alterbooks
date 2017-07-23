@@ -1,6 +1,14 @@
 html {
   overflow-y: scroll;
 }
+@font-face {
+  font-family: Kurale, serif;
+  src: url("../fonts/Kurale-Regular.woff");
+}
+@font-face {
+  font-family: Myriad Pro, sans-serif;
+  src: url("../fonts/MyriadPro-Regular.woff");
+}
 body {
   display: flex;
   flex-direction: column;
@@ -55,6 +63,18 @@ body {
     margin-top: -47px;
   }
 }
+@media screen and (max-width: 1024px) {
+  .header-books {
+    height: 25px;
+  }
+  .header-books__image {
+    height: 22px;
+  }
+  .header-books__shadow {
+    height: 25px;
+    margin-top: -22px;
+  }
+}
 .header-shelf {
   display: flex;
   align-items: center;
@@ -64,13 +84,23 @@ body {
   border-top: solid 1px #231f20;
   border-bottom: solid 1px #231f20;
 }
+@media screen and (max-width: 1024px) {
+  .header-shelf {
+    justify-content: space-between;
+    height: 35px;
+  }
+}
 .header-caption {
   display: flex;
   align-items: center;
-  width: 18.3vw;
+  width: auto;
   height: 7.6vw;
   margin-left: 1.5vw;
   margin-right: 3vw;
+}
+.header-caption__href {
+  display: flex;
+  align-items: center;
 }
 .header-caption__logo {
   width: 5.5vw;
@@ -86,16 +116,23 @@ body {
   color: #f0b055;
 }
 @media screen and (min-width: 1024px) and (max-width: 1400px) {
-  .header-caption {
-    width: 253px;
-  }
-  .header-caption__title {
-    font-size: 28px;
-  }
   .header-caption__logo {
     width: 77px;
     height: 108px;
     margin-right: 17px;
+  }
+  .header-caption__title {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .header-caption__logo {
+    width: 50px;
+    height: 70px;
+    margin-right: 15px;
+  }
+  .header-caption__title {
+    font-size: 20px;
   }
 }
 .header-menu {
@@ -105,7 +142,7 @@ body {
   border-left: 1px solid rgba(0, 0, 0, 0.3);
 }
 .header-menu__item:last-child {
-  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  border-right: 1c;
 }
 .header-menu__href {
   display: block;
@@ -122,10 +159,61 @@ body {
   color: #ffdf8b;
   transition-duration: 1s;
 }
+.header-menu__active {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 200px;
+  width: 25px;
+  height: 25px;
+  margin-top: 2px;
+  margin-left: 10px;
+  background: url("../img/menu-icon.png");
+  background-size: 100%;
+}
 @media screen and (min-width: 1024px) and (max-width: 1400px) {
   .header-menu__href {
     width: 12vw;
     font-size: 18px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .header-menu__items {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 59px;
+    left: 200px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-top: none;
+    border-bottom-right-radius: 10px;
+    background: #75644c;
+    z-index: 5;
+  }
+  .header-menu__active {
+    display: block;
+  }
+  .header-menu:hover .header-menu__active,
+  .header-menu:active .header-menu__active {
+    margin-right: 200px;
+    transform: rotate(90deg);
+    transition-duration: 0.5s;
+  }
+  .header-menu:hover .header-menu__items,
+  .header-menu:active .header-menu__items {
+    display: block;
+  }
+  .header-menu__item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  .header-menu__href {
+    width: 250px;
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 415px) {
+  .header-menu__items {
+    left: 60px;
   }
 }
 .header-login {
@@ -134,7 +222,7 @@ body {
 .header-login__button {
   display: flex;
   align-items: center;
-  width: 200px;
+  width: 10.42vw;
   height: 35px;
 }
 .header-login__button:hover .header-login__form {
@@ -168,7 +256,7 @@ body {
   font-size: 1.3vw;
   color: #b09f89;
 }
-@media screen and (min-width: 1024px) and (max-width: 1400px) {
+@media screen and (max-width: 1400px) {
   .header-login__button:hover .header-login__button-text {
     color: rgba(0, 0, 0, 0);
   }
@@ -188,6 +276,31 @@ body {
     color: rgba(0, 0, 0, 0);
     background: url("../img/login.png") no-repeat;
     background-size: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .header-login {
+    margin-right: 10px;
+    margin-top: 2px;
+  }
+  .header-login__button {
+    width: 52px;
+  }
+  .header-login__form-field {
+    width: 51px;
+  }
+  .header-login__form {
+    width: 50px;
+    height: 31px;
+  }
+  .header-login__button-text {
+    width: 18px;
+    height: 18px;
+    margin-left: -35px;
+    margin-top: -2px;
+    background: url("../img/login.png") no-repeat;
+    background-size: 100%;
+    color: rgba(0, 0, 0, 0);
   }
 }
 .main {
