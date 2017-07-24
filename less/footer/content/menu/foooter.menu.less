@@ -1,3 +1,22 @@
 .footer-menu {
   margin-top: 3.28vw;
+
+  &__blocks {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media screen and (max-width: 1000px) {
+    width: 70vw;
+
+    &__blocks {
+      flex-wrap: wrap;
+    }
+  }
+
+  @media screen and (max-width: 715px) {
+    &__blocks {
+      flex-direction: column;
+    }
+  }
 }

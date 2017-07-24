@@ -93,4 +93,91 @@
       margin-left: 0.49vw;
     }
   }
+
+  @media screen and (max-width: 1000px) {
+    width: 230px;
+    margin: 0;
+    margin-left: 20px;
+
+    &:nth-child(3),
+    &:nth-child(4) {
+      margin-top: 30px;
+    }
+
+    &__title {
+      font-size: 16px;
+    }
+
+    &__item {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    &__href {
+      margin-top: 12px;
+
+      &_vk::before,
+      &_fb::before,
+      &_tw::before {
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+        background-size: 100%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 715px) {
+    &:nth-child(2) {
+      margin-top: 30px;
+    }
+
+    &__title {
+      font-size: 16px;
+    }
+
+    &__item {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    &__href {
+      margin-top: 8px;
+
+      &_vk::before,
+      &_fb::before,
+      &_tw::before {
+        width: 18px;
+        height: 18px;
+        margin-right: 6px;
+        background-size: 100%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 390px) {
+    width: 190px;
+
+    &__title {
+      font-size: 14px;
+    }
+
+    &__item {
+      margin: 0;
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (max-width: 340px) {
+    width: 170px;
+
+    &__title {
+      font-size: 12px;
+    }
+
+    &__item {
+      margin: 0;
+      font-size: 12px;
+    }
+  }
 }
