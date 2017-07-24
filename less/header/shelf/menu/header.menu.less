@@ -1,20 +1,33 @@
 .header-menu {
   display: flex;
 
-  &__item {
+  /*&__item {
     border-left: 1px solid rgba(0, 0, 0, 0.3);
 
     &:last-child {
-      border-right: 1c;
+      border-right: 1px solid rgba(0, 0, 0, 0.3);
     }
+  }*/
+
+  &__items {
+    display: flex;
+    align-items: center;
+  }
+
+  &__hr {
+    display: block;
+    width: 1px;
+    height: 31px;
+    margin: 0 5px;
+    background: rgba(0, 0, 0, 0.3);
   }
 
   &__href {
     display: block;
     width: 10.5vw;
-    height: 31px;
+    height: 40px;
     text-align: center;
-    line-height: 31px;
+    line-height: 40px;
     color: #f0b055;
     font-size: 1.3vw;
 

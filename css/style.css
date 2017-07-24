@@ -137,19 +137,31 @@ body {
 }
 .header-menu {
   display: flex;
+  /*&__item {
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+
+    &:last-child {
+      border-right: 1px solid rgba(0, 0, 0, 0.3);
+    }
+  }*/
 }
-.header-menu__item {
-  border-left: 1px solid rgba(0, 0, 0, 0.3);
+.header-menu__items {
+  display: flex;
+  align-items: center;
 }
-.header-menu__item:last-child {
-  border-right: 1c;
+.header-menu__hr {
+  display: block;
+  width: 1px;
+  height: 31px;
+  margin: 0 5px;
+  background: rgba(0, 0, 0, 0.3);
 }
 .header-menu__href {
   display: block;
   width: 10.5vw;
-  height: 31px;
+  height: 40px;
   text-align: center;
-  line-height: 31px;
+  line-height: 40px;
   color: #f0b055;
   font-size: 1.3vw;
 }
