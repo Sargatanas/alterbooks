@@ -14,8 +14,6 @@ html {
   src: local('@');
   src: url('../fonts/MyriadPro-Regular.woff') format('woff');
   src: url('../fonts/MyriadPro-Regular.woff2') format('woff2');
-  src: url('../fonts/MyriadPro-Regular.ttf') format('truetype');
-  src: url('../fonts/MyriadPro-Regular.eot') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -26,7 +24,7 @@ body {
   margin: 0;
   padding: 0;
   background: linear-gradient(to right, #494643 0%, #59544f 40%, #59544f 60%, #494643 100%);
-  font-family: "Myriad Pro", sans-serif;
+  font-family: Myriad Pro, sans-serif;
 }
 .menu {
   display: flex;
