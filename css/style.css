@@ -906,15 +906,15 @@ body {
     border-radius: 4px;
   }
   .main-information__title {
-    width: 8.5em;
+    width: 125px;
     font-size: 15px;
   }
   .main-information__hr {
-    width: calc(100% - 8.5em);
+    width: calc(100% - 125px);
   }
   .main-information__edit {
-    width: 11em;
-    margin-left: calc(100% - 11em);
+    width: 130px;
+    margin-left: calc(100% - 130px);
     font-size: 12px;
   }
   .main-information-content__item-title {
