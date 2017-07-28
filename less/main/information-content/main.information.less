@@ -147,4 +147,80 @@
       font-size: 1.4vw;
     }
   }
+
+  @media screen and (max-width: 900px) {
+    width: 69vw;
+    height: auto;
+    margin-top: 55px;
+    font-size: 15px;
+    border-radius: 4px;
+
+    &__title {
+      width: 8.5em;
+      font-size: 15px;
+    }
+
+    &__hr {
+      width: ~"calc(100% - 8.5em)";
+    }
+
+    &__edit {
+      width: 11em;
+      margin-left: ~"calc(100% - 11em)";
+      font-size: 12px;
+    }
+
+    &-content {
+      &__item-title {
+        width: 110px;
+        font-size: 12px;
+      }
+
+      &__fill {
+        font-size: 12px;
+
+        &_special-content {
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 710px) {
+    margin-left: 120px;
+  }
+
+  @media screen and (max-width: 640px) {
+    width: 83vw;
+    margin-top: 120px;
+    margin-left: 20px;
+
+    &__edit {
+      width: 20px;
+      height: 20px;
+      overflow: hidden;
+      margin-left: ~"calc(100% - 20px)";
+      opacity: 0.6;
+      transition-duration: 0.3s;
+
+      &::before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: url("../img/edit-icon.png") no-repeat;
+        background-size: 20px 20px;
+      }
+
+      &:hover {
+        opacity: 1;
+        transition-duration: 0.3s;
+      }
+    }
+  }
+
+  @media screen and (max-width: 460px) {
+    width: 80vw;
+    margin-top: 105px;
+  }
 }

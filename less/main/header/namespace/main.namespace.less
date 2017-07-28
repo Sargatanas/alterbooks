@@ -42,4 +42,56 @@
       font-size: 1.38vw;
     }
   }
+
+  @media screen and (max-width: 900px) {
+    width: 50%;
+    margin-right: 12%;
+
+    &__name {
+      font-size: 20px;
+    }
+  }
+
+  @media screen and (max-width: 710px) {
+    width: 70%;
+    margin-right: 0;
+    margin-top: 5px;
+
+    &__name {
+      font-size: 25px;
+    }
+
+    &__nickname {
+      font-size: 15px;
+    }
+  }
+
+  @media screen and (max-width: 635px) {
+    margin-top: 10px;
+
+    &__name {
+      font-size: 22px;
+      line-height: 22px;
+    }
+
+    &__nickname {
+      font-size: 15px;
+      line-height: 20px;
+    }
+  }
+
+  @media screen and (max-width: 555px) {
+    margin-top: 5px;
+
+    &__nickname {
+      margin-top: 4px;
+    }
+  }
+
+  @media screen and (max-width: 460px) {
+    &__name {
+      height: 70px;
+      width: 100px;
+    }
+  }
 }

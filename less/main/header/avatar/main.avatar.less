@@ -50,19 +50,19 @@
     }
   }
 
-    @media screen and (max-width: 1400px) {
-      &__image {
-        width: 15.36vw;
-        height: 17.14vw;
-        border-radius: 0.28vw;
-      }
-
-      &__button {
-        width: 15.36vw;
-        margin-top: 1vw;
-        border-radius: 0.28vw;
-      }
+  @media screen and (max-width: 1400px) {
+    &__image {
+      width: 15.36vw;
+      height: 17.14vw;
+      border-radius: 0.28vw;
     }
+
+    &__button {
+      width: 15.36vw;
+      margin-top: 1vw;
+      border-radius: 0.28vw;
+    }
+  }
 
   @media screen and (max-width: 1200px) {
     &__button::before {
@@ -76,5 +76,62 @@
       font-size: 1.5vw;
       line-height: 3.33vw;
     }
+  }
+
+  @media screen and (max-width: 900px) {
+    margin-left: 20px;
+
+    &__image {
+      background-size: 91px 75px;
+    }
+  }
+
+  @media screen and (max-width: 710px) {
+    margin-top: -30px;
+    margin-left: 10px;
+
+    &__image {
+      width: 96px;
+      height: 210px;
+    }
+
+    &__button {
+      position: relative;
+      top: -30px;
+      left: 67px;
+      width: 30px;
+      height: 30px;
+      margin: 0;
+      border-top-left-radius: 4px;
+      box-shadow: none;
+      opacity: 0.6;
+
+      &::after {
+        display: none;
+      }
+
+      &::before {
+        position: relative;
+        left: 2px;
+        width: 20px;
+        height: 20px;
+        background: url("../img/change-icon.png") no-repeat 50% 50%;
+        background-size: 100%;
+        transition-duration: 0.2s;
+      }
+
+      &:hover {
+        opacity: 1;
+
+        &::before {
+          transform: rotate(180deg);
+          transition-duration: 0.3s;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 555px) {
+    margin-top: -20px;
   }
 }
