@@ -42,6 +42,11 @@ body {
 .header {
   width: 100%;
 }
+@media screen and (max-width: 320px) {
+  .header {
+    display: none;
+  }
+}
 .header-books {
   width: 100%;
   height: 3.6vw;
@@ -347,6 +352,11 @@ body {
 @media screen and (max-width: 640px) {
   .main {
     height: 480px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .main {
+    display: none;
   }
 }
 .main__background {
@@ -1001,6 +1011,11 @@ body {
     height: 500px;
   }
 }
+@media screen and (max-width: 320px) {
+  .footer {
+    display: none;
+  }
+}
 .footer-content {
   display: flex;
   justify-content: space-between;
@@ -1225,9 +1240,10 @@ body {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 150vh;
+  height: 100vh;
   background: #805549;
   transition-duration: 0.3s;
+  overflow: hidden;
 }
 .error__image {
   width: 70vw;
