@@ -4,10 +4,12 @@ html {
 @font-face {
   font-family: Kurale, serif;
   src: url("../fonts/Kurale-Regular.woff");
+  src: url("../fonts/Kurale-Regular.woff2");
 }
 @font-face {
   font-family: Myriad Pro, sans-serif;
   src: url("../fonts/MyriadPro-Regular.woff");
+  src: url("../fonts/MyriadPro-Regular.woff2");
 }
 body {
   display: flex;
