@@ -82,6 +82,8 @@ body {
   }
   .header-books__image {
     height: 22px;
+    background-position: 100% 100%;
+    background-size: auto 150%;
   }
   .header-books__shadow {
     height: 25px;
