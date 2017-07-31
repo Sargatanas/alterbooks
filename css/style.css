@@ -247,18 +247,12 @@ body {
 .header-login__button {
   display: flex;
   align-items: center;
-  width: 10.42vw;
-  height: 35px;
 }
 .header-login__button:hover .header-login__form {
-  fill: #6a5d4a;
-  stroke: #ae988d;
-  stroke-dasharray: 1000px;
+  background: #6a5d4a;
+  border-color: #ae988d;
   transition-duration: 1s;
-}
-.header-login__button:hover .header-login__button-text {
   color: #d8c9b5;
-  transition-duration: 1s;
 }
 .header-login__form-field {
   width: 194px;
@@ -266,41 +260,29 @@ body {
   transform-origin: 0 0 0;
 }
 .header-login__form {
+  display: block;
   width: 192px;
   height: 33px;
-  fill: #5b4e3f;
-  stroke: #9c877c;
-  stroke-width: 2px;
-  stroke-dasharray: 5px;
-  rx: 0.52vw;
-}
-.header-login__button-text {
-  position: relative;
-  margin-left: calc(-192px/2 - 1.3vw);
-  margin-top: -0.15vw;
+  background: #5b4e3f;
+  border: 2px dashed #9c877c;
+  border-radius: 0.52vw;
   font-size: 1.3vw;
+  line-height: 33px;
   color: #b09f89;
+  text-align: center;
 }
 @media screen and (max-width: 1400px) {
-  .header-login__button:hover .header-login__button-text {
-    color: rgba(0, 0, 0, 0);
-  }
-  .header-login__form-field {
-    width: 6vw;
-  }
   .header-login__form {
     width: 5.9vw;
-    stroke-dasharray: 3px;
-    rx: 7px;
-  }
-  .header-login__button-text {
-    width: 1.8vw;
-    height: 1.8vw;
-    margin-left: -3.9vw;
-    margin-top: -0.1vw;
+    border-radius: 7px;
+    background: url("../img/login.png") no-repeat 50% 50%;
+    background-size: auto 70%;
     color: rgba(0, 0, 0, 0);
-    background: url("../img/login.png") no-repeat;
-    background-size: 100%;
+  }
+  .header-login:hover .header-login__form {
+    background: #6a5d4a url("../img/login.png") no-repeat 50% 50%;
+    background-size: auto 70%;
+    color: rgba(0, 0, 0, 0);
   }
 }
 @media screen and (max-width: 1024px) {
@@ -308,24 +290,10 @@ body {
     margin-right: 10px;
     margin-top: 2px;
   }
-  .header-login__button {
-    width: 52px;
-  }
-  .header-login__form-field {
-    width: 51px;
-  }
   .header-login__form {
-    width: 50px;
-    height: 31px;
-  }
-  .header-login__button-text {
-    width: 18px;
-    height: 18px;
-    margin-left: -35px;
-    margin-top: -2px;
-    background: url("../img/login.png") no-repeat;
-    background-size: 100%;
-    color: rgba(0, 0, 0, 0);
+    width: 40px;
+    height: 25px;
+    margin-left: 1.56vw;
   }
 }
 .main {
